@@ -1,3 +1,9 @@
+---
+name: nonce-manager-agent
+skill: nonce-manager
+description: Cross-process Stacks nonce oracle — prevents client-side nonce collisions by serializing nonce acquisition and release across concurrent skills.
+---
+
 # Nonce Manager — Agent Briefing
 
 ## Purpose
