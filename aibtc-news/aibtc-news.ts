@@ -365,6 +365,7 @@ program
           method: "POST",
           headers,
           body: JSON.stringify(body),
+          signal: AbortSignal.timeout(30_000),
         });
 
         if (initialRes.status !== 402) {
@@ -466,6 +467,7 @@ program
             [X402_HEADERS.PAYMENT_SIGNATURE]: paymentSignature,
           },
           body: JSON.stringify(body),
+          signal: AbortSignal.timeout(30_000),
         });
 
         const responseText = await finalRes.text();
